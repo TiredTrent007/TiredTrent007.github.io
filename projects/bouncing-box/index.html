@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
 
+<html>
 <head>
 	<meta charset="utf-8">
 	<title>Bouncing Box</title>
@@ -47,7 +47,6 @@
 
 			// Every 50 milliseconds, call the update Function (see below)
 			setInterval(update, 50);
-
 			// Every time the box is clicked, call the handleBoxClick Function (see below)
 			box.on('click', handleBoxClick);
 
@@ -77,10 +76,7 @@
 			turn it around! 
 			*/
 			function update() {
-
-
-			};
-             positionX = positionX + speed;
+			positionX = positionX + speed;
 			 moveBoxTo(positionX)
 			 if(positionX > boardWidth) {
 				speed = -speed;
@@ -88,29 +84,26 @@
 			 if(positionX < 0){
 				speed = speed * -1
 			 }
+
+			 };
+             
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
 			it should increase the points total, increase the speed, and move the box to
 			the left side of the screen.
 			*/
-			function handleBoxClick() {
-
-
-			};
-
-
-          function handleBoxClick() {
+            function handleBoxClick() {
 			positionX = 0;
-			points = points + 1;
-			changeBoxText(points
-				if(speed > 0)
-				speed = speed + 3
-		  } else if (speed < 0){
-			speed = speed - 3
-		  }
+			points++
+			changeBoxText(points)
+			if(speed > 0){
+			    speed = speed + 3
+			}
+		     
+		    };
          
-
-		})();
+		
+		} ) ();
 	</script>
 </body>
 

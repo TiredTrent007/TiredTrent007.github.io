@@ -50,7 +50,9 @@ $(function () {
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
   createCollectable('grace', 500, 300,);
-    
+  createCollectable('diamond', 200, 500);
+  createCollectable('max', 250, 400);
+  createCollectable('steve', 400, 550);
     // TODO 3
     // Create cannons
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
